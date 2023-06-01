@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}RT{MM}{####}",
+ "creation": "2023-03-16 21:48:36.453649",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "booking",
+  "start_date",
+  "rent_type",
+  "license_plate",
+  "is_valid",
+  "column_break_2",
+  "date",
+  "end_date",
+  "model",
+  "unit_price",
+  "section_break_9",
+  "road_trip_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking",
+   "fieldtype": "Link",
+   "label": "Booking",
+   "options": "Booking"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "rent_type",
+   "fieldtype": "Data",
+   "label": "Rent type"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Link",
+   "label": "License Plate",
+   "options": "Vehicle"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_valid",
+   "fieldtype": "Check",
+   "label": "Is Valid"
+  },
+  {
+   "fieldname": "road_trip_details",
+   "fieldtype": "Table",
+   "label": "Road trip Details",
+   "options": "Road trip Details"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-16 21:58:58.587531",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Road Trip",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

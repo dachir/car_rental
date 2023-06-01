@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}BOOK{MM}{####}",
+ "creation": "2023-03-16 17:30:43.903544",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "customer",
+  "category",
+  "make",
+  "start_date",
+  "deposit",
+  "rent_type",
+  "with_driver",
+  "column_break_6",
+  "location",
+  "date",
+  "model",
+  "licence_plate",
+  "end_date",
+  "currency",
+  "sales_person",
+  "details_section",
+  "booking_details",
+  "amended_from",
+  "chechlist_tab",
+  "checklist_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fetch_from": "category.deposit",
+   "fieldname": "deposit",
+   "fieldtype": "Currency",
+   "label": "Deposit",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "rent_type",
+   "fieldtype": "Select",
+   "label": "Rent type",
+   "options": "Rent Per Km\nRent Per Hour\nRent Per Day"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fetch_from": "category.currency",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "booking_details",
+   "fieldtype": "Table",
+   "options": "Booking Details"
+  },
+  {
+   "fieldname": "chechlist_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chechlist"
+  },
+  {
+   "fieldname": "checklist_details",
+   "fieldtype": "Table",
+   "label": "Checklist Details",
+   "options": "Checklist Details"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "licence_plate",
+   "fieldtype": "Data",
+   "label": "Licence Plate"
+  },
+  {
+   "default": "0",
+   "fieldname": "with_driver",
+   "fieldtype": "Check",
+   "label": "With Driver"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Quotation",
+   "link_doctype": "Quotation",
+   "link_fieldname": "booking"
+  }
+ ],
+ "modified": "2023-03-20 17:01:55.989875",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

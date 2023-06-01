@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-20 08:25:31.581933",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "checklist",
+  "is_checked",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Link",
+   "label": "Checklist",
+   "options": "Checklist"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_checked",
+   "fieldtype": "Check",
+   "label": "is Checked"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-20 08:25:31.581933",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Checklist Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

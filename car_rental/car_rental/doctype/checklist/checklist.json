@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:checklist_name",
+ "creation": "2023-03-20 08:14:49.861843",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "checklist_name",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "checklist_name",
+   "fieldtype": "Data",
+   "label": "Checklist Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-20 08:15:02.695292",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Checklist",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
